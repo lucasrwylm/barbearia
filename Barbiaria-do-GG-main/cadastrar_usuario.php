@@ -7,7 +7,7 @@ print_r($_POST);
 
 $grupo_usuario = ['admin', 'barbeiro', 'cliente'];
 
-$nome_usuario = $_POST['nome_usuario'];
+$nome = $_POST['nome'];
 $email = $_POST['email'];
 $data_de_nascimento = $_POST['data_de_nascimento'];
 $id_grupo = $_POST['id_grupo'];
@@ -25,8 +25,8 @@ echo "<br>numero_agencia $numero_agencia";
 
 
 
-$sql_usuario = "INSERT INTO usuarios (nome_usuario , email, data_de_nascimento, id_grupo)
-VALUES ('$nome_usuario', '$email', '$data_de_nascimento', $id_grupo)";
+$sql_usuario = "INSERT INTO usuarios (nome , email, data_de_nascimento, id_grupo)
+VALUES ('$nome', '$email', '$data_de_nascimento', $id_grupo)";
 
 
 
